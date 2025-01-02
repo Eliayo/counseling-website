@@ -1,0 +1,175 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+BE+WAL:wght@100..400&family=Playwrite+FR+Trad:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Top Contact Bar -->
+  <div class="bg-black top-0 py-2 text-lg fixed z-50 w-[100%] text-white font-Montserrat">
+    <div class="container mx-auto flex md:flex-row flex-col justify-start md:justify-between md:gap-0 gap-2 items-start md:items-center">
+        <div class="flex md:justify-start justify-center ml-4 md:ml-0">Email: anna@integracounselling.co.uk</div>
+        <div class="flex md:justify-end justify-start ml-4 md:ml-0"><button class="px-8 py-2 rounded-md bg-primary ">Appointment</button></div>
+    </div>
+  </div>
+  
+  <!-- navbar  -->
+  <nav class="bg-gray-950  font-Montserrat text-lg fixed z-40 w-[100%] text-white md:top-[3rem] top-[6rem]">
+    <div class="container mx-auto flex justify-between items-center py-4">
+         <!-- Logo -->
+         <div class="flex-shrink-0 flex items-center">
+            <a href="index.html"> <img class="h-10 " src="image/logo.png" alt="Logo"></a>
+         </div>
+        <div class="hidden md:flex space-x-8 items-center">
+            <a href="index.html" class="text-gray-400 hover:text-primary focus:text-primary inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-purple-600 focus:border-purple-600 text-sm font-medium transition duration-150 ease-in-out">Home</a>
+            <a href="about.html" class="text-gray-400 hover:text-primary focus:text-primary inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-purple-600 focus:border-purple-600 text-sm font-medium transition duration-150 ease-in-out">About</a>
+            <a href="service.html" class="text-gray-100 hover:text-primary focus:text-primary inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-purple-600 focus:border-purple-600 text-sm font-medium transition duration-150 ease-in-out">Services</a>
+            <a href="Blog.html" class="text-gray-400 hover:text-primary focus:text-primary inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-purple-600 focus:border-purple-600 text-sm font-medium transition duration-150 ease-in-out">Blog</a>
+            <a href="faq.html" class="text-gray-400 hover:text-primary focus:text-primary inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-purple-600 focus:border-purple-600 text-sm font-medium transition duration-150 ease-in-out">Faq</a>
+            <a href="contact.html" class="text-gray-400 hover:text-primary focus:text-primary inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-purple-600 focus:border-purple-600 text-sm font-medium transition duration-150 ease-in-out">Contact</a>
+            <a href="#" class="text-gray-400 hover:text-primary focus:text-primary inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-purple-600 focus:border-purple-600 text-sm font-medium transition duration-150 ease-in-out">PL</a>
+        </div>
+        <div class="md:hidden">
+            <button id="mobile-menu-button" class="text-gray-700 focus:outline-none">
+                <svg class="h-8 w-8" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+            </button>
+        </div>
+    </div>
+    <div id="mobile-menu" class="md:hidden hidden bg-gray-950 text-white ">
+        <a href="index.html" class="bg-purple-50 border-purple-500 text-purple-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Home</a>
+        <a href="about.html" class="border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">About</a>
+        <a href="service.html" class="border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Services</a>
+        <a href="Blog.html" class="border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Blog</a>
+        <a href="faq.html" class="border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">FAQ</a>
+        <a href="contact.html" class="border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">Contact</a>
+        <a href="#" class="border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800 block pl-3 pr-4 py-2 border-l-4 text-base font-medium">PL</a>
+    </div>
+  </nav>
+  <!-- navbar  -->
+<!-- Landing Page -->
+<div style="background-image: url('image/service.jpg'); background-position: center; background-size: cover; background-repeat: no-repeat; width: 100%;" class="md:h-[60vh] h-[80vh] relative flex items-center justify-center font-Montserrat mt-14">
+    <div class="text-white px-4">
+        <h1 class="text-2xl md:text-3xl font-bold animate-fadeIn">Service We Rendered</h1>
+        <p class="mt-4 text-xl md:text-2xl animate-fadeIn delay-1s">Integrative Therapeutic Counseling for Your Well-being</p>
+        <div class="mt-6 flex gap-6">
+            <a href="contact.html" class="text-white underline animate-pulse">Contact Us</a>
+            <a href="index.html" class="text-white underline animate-pulse">Home</a>
+        </div>
+    </div>
+</div>
+<!-- Landing Page -->
+
+
+<section class="container mx-auto py-16 px-6 md:px-12 lg:px-24 space-y-10 font-Montserrat">
+    <!-- Availability Section -->
+    <div class="bg-white p-6 shadow-lg rounded-lg fadeIn">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">Availability</h2>
+        <p class="text-[1rem] text-gray-700 leading-relaxed mb-4">I am currently unable to offer sessions to new clients.</p>
+    </div>
+    
+    <!-- Services Section -->
+    <div class="bg-white p-6 shadow-lg rounded-lg fadeIn">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">Services</h2>
+        <ul class="list-disc list-inside space-y-2">
+            <li class="text-[1rem] text-gray-700 leading-relaxed">I only offer individual counselling for adults.</li>
+            <li class="text-[1rem] text-gray-700 leading-relaxed">Individual sessions cost £100 and last 50 minutes.</li>
+            <li class="text-[1rem] text-gray-700 leading-relaxed">I also offer telephone and online counselling.</li>
+            <li class="text-[1rem] text-gray-700 leading-relaxed">My working hours can be found below.</li>
+        </ul>
+        <p class="text-[1rem] text-gray-700 leading-relaxed mt-4">Low-cost therapy is available for students and those on low incomes.</p>
+    </div>
+    
+    <!-- Insurance Section -->
+    <div class="bg-white p-6 shadow-lg rounded-lg fadeIn">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">Insurance</h2>
+        <p class="text-[1rem] text-gray-700 leading-relaxed">I am registered with insurance companies:</p>
+        <ul class="list-disc list-inside space-y-2">
+            <li class="text-[1rem] text-gray-700 leading-relaxed">Cigna</li>
+            <li class="text-[1rem] text-gray-700 leading-relaxed">VitalityHealth</li>
+            <li class="text-[1rem] text-gray-700 leading-relaxed">Aetna Global Benefits</li>
+            <li class="text-[1rem] text-gray-700 leading-relaxed">Universal Support</li>
+            <li class="text-[1rem] text-gray-700 leading-relaxed">BUPA</li>
+        </ul>
+    </div>
+    
+    <!-- Consultation Section -->
+    <div class="bg-white p-6 shadow-lg rounded-lg fadeIn">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">Free Consultation</h2>
+        <p class="text-[1rem] text-gray-700 leading-relaxed">I offer a free, 15-minute, confidential initial telephone consultation, so you can ask questions and decide if I am the right counsellor for you. Everything we discuss is treated confidentially, regardless of whether you decide to proceed.</p>
+    </div>
+    
+    <!-- Sessions Section -->
+    <div class="bg-white p-6 shadow-lg rounded-lg fadeIn">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">Sessions</h2>
+        <p class="text-[1rem] text-gray-700 leading-relaxed">The number of sessions is determined individually, based on your needs and the nature of the problem.</p>
+    </div>
+    
+    <!-- Help Section -->
+    <div class="bg-white p-6 shadow-lg rounded-lg fadeIn">
+        <h2 class="text-3xl md:text-4xl font-bold mb-4 text-gray-800">I Can Help You With:</h2>
+        <ul class="list-disc list-inside space-y-2">
+            <li class="text-[1rem] text-gray-700 leading-relaxed">Abuse</li>
+            <li class="text-[1rem] text-gray-700 leading-relaxed">Adjustment disorders</li>
+            <li class="text-[1rem] text-gray-700 leading-relaxed">Anger management</li>
+            <li class="text-[1rem] text-gray-700 leading-relaxed">Anxiety</li>
+            <li class="text-[1rem] text-gray-700 leading-relaxed">Attachment issues</li>
+            <li class="text-[1rem] text-gray-700 leading-relaxed">Bereavement and loss</li>
+            <li class="text-[1rem] text-gray-700 leading-relaxed">Childhood trauma</li>
+            <li class="text-[1rem] text-gray-700 leading-relaxed">Depression</li>
+            <li class="text-[1rem] text-gray-700 leading-relaxed">Domestic violence</li>
+            <li class="text-[1rem] text-gray-700 leading-relaxed">Eating disorders</li>
+            <li class="text-[1rem] text-gray-700 leading-relaxed">Family issues</li>
+            <li class="text-[1rem] text-gray-700 leading-relaxed">Obsessive-compulsive disorder</li>
+            <li class="text-[1rem] text-gray-700 leading-relaxed">Personality disorders</li>
+            <li class="text-[1rem] text-gray-700 leading-relaxed">Psychosomatic disorders</li>
+            <li class="text-[1rem] text-gray-700 leading-relaxed">Relationship issues</li>
+            <li class="text-[1rem] text-gray-700 leading-relaxed">Self-esteem issues</li>
+            <li class="text-[1rem] text-gray-700 leading-relaxed">Self-harming</li>
+            <li class="text-[1rem] text-gray-700 leading-relaxed">Suicidal ideation</li>
+        </ul>
+        <p class="text-[1rem] text-gray-700 leading-relaxed mt-4">I also provide therapy sessions in Polish.</p>
+    </div>
+</section>
+
+<div class="bg-primary text-white py-10 font-Montserrat px-10 flex md:flex-row flex-col justify-start md:justify-center gap-14 cursor-pointer items-start md:items-center">
+    <div>
+        <p class="text-2xl md:text-3xl">Request an appointment online </p>
+    </div>
+    <div><button class="py-3 px-8 border  border-white shadow-md rounded-sm text-white cursor-pointer">Apppointment</button></div>
+</div>
+
+
+<footer class="bg-[#0E1125] p-10 text-white grid grid-cols-12 justify-start md:justify-between items-start md:items-center font-Montserrat gap-4">
+    <div class="md:col-span-4 col-span-12"><img src="image/logo.png" alt="" class="h-28"></div>
+    <div class="md:col-span-4 col-span-12  flex flex-row justify-start md:justify-center gap-14 ">
+        <ul class="flex flex-col justify-center gap-2">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="service.html">Service</a></li>
+            <li><a href="Blog.html">Blog</a></li>
+        </ul>
+        <ul class="flex flex-col  gap-2">
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="PL.html">PL</a></li>
+
+        </ul>
+    </div>
+    <div class="md:col-span-4 col-span-12 md:mt-0 mt-4">
+        <div>
+            <p>&copy; Copyright 2024 INTEGRA Counselling.</p>
+            <p>We use cookies on this website. <a href="Policy.html">Learn more</a></p>
+        </div>
+    </div>
+
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

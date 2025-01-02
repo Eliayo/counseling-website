@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Language Switcher Example</title>
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="./output.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body class="bg-gray-100 text-gray-900">
+
+  <!-- Navigation Bar with Language Switch Button -->
+  <nav class="p-4 bg-gradient-to-r from-blue-500 to-purple-600 text-white">
+    <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-2xl font-bold">My Website</h1>
+        <button id="language-switch" class="px-4 py-2 bg-white text-blue-500 font-semibold rounded-lg shadow-md hover:bg-gray-100 focus:outline-none">
+            Switch to Polish
+        </button>
+    </div>
+</nav>
+
+<!-- Main Content -->
+<div class="container mx-auto p-8">
+    <h1 class="text-4xl font-bold mb-4" data-translate-key="title">Welcome to Our Website</h1>
+    <p class="mb-4" data-translate-key="description">This is an English description of the website content.</p>
+    <p data-translate-key="moreInfo">Click the button above to switch to Polish language.</p>
+</div>
+
+<!-- JavaScript for Language Switching -->
+<script>
+    const translations = {
+        en: {
+            title: "Welcome to Our Website",
+            description: "This is an English description of the website content.",
+            moreInfo: "Click the button above to switch to Polish language."
+        },
+        pl: {
+            title: "Witamy na naszej stronie",
+            description: "To jest polski opis treści strony internetowej.",
+            moreInfo: "Kliknij przycisk powyżej, aby przełączyć się na język polski."
+        }
+    };
+
+    let currentLanguage = 'en';
+
+    document.getElementById('language-switch').addEventListener('click', function() {
+        currentLanguage = currentLanguage === 'en' ? 'pl' : 'en';
+        switchLanguage(currentLanguage);
+        updateButtonText(currentLanguage);
+    });
+
+    function switchLanguage(lang) {
+        document.querySelectorAll('[data-translate-key]').forEach(function(element) {
+            const key = element.getAttribute('data-translate-key');
+            element.textContent = translations[lang][key];
+        });
+    }
+
+    function updateButtonText(lang) {
+        const button = document.getElementById('language-switch');
+        button.textContent = lang === 'en' ? 'Switch to Polish' : 'Switch to English';
+    }
+</script>
+</body>
+</html>

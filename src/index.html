@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+BE+WAL:wght@100..400&family=Playwrite+FR+Trad:wght@100..400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+  <body>
+    <div
+      class="bg-black top-0 py-2 text-lg fixed z-50 w-[100%] text-white font-Montserrat"
+    >
+      <div
+        class="container mx-auto flex md:flex-row flex-col justify-start md:justify-between md:gap-0 gap-2 items-start md:items-center"
+      >
+        <div class="flex md:justify-start justify-center ml-4 md:ml-0">
+          Email: anna@integracounselling.co.uk
+        </div>
+        <div class="flex md:justify-end justify-start ml-4 md:ml-0">
+          <button class="px-8 py-2 rounded-md bg-primary">Appointment</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- navbar  -->
+    <nav
+      class="bg-gray-950 font-Montserrat text-lg fixed z-40 w-[100%] text-white md:top-[3rem] top-[6rem]"
+    >
+      <div class="container mx-auto flex justify-between items-center py-4">
+        <!-- Logo -->
+        <div class="flex-shrink-0 flex items-center">
+          <a href="index.html" class="object-cover">
+            <img class="h-10 object-cover" src="image/logo.png" alt="Logo"
+          /></a>
+        </div>
+        <div class="hidden md:flex space-x-8 items-center">
+          <a
+            href="index.html"
+            class="text-gray-100 hover:text-primary focus:text-primary inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-purple-600 focus:border-purple-600 text-sm font-medium transition duration-150 ease-in-out"
+            >Home</a
+          >
+          <a
+            href="about.html"
+            class="text-gray-400 hover:text-primary focus:text-primary inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-purple-600 focus:border-purple-600 text-sm font-medium transition duration-150 ease-in-out"
+            >About</a
+          >
+          <a
+            href="service.html"
+            class="text-gray-400 hover:text-primary focus:text-primary inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-purple-600 focus:border-purple-600 text-sm font-medium transition duration-150 ease-in-out"
+            >Services</a
+          >
+          <a
+            href="Blog.html"
+            class="text-gray-400 hover:text-primary focus:text-primary inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-purple-600 focus:border-purple-600 text-sm font-medium transition duration-150 ease-in-out"
+            >Blog</a
+          >
+          <a
+            href="faq.html"
+            class="text-gray-400 hover:text-primary focus:text-primary inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-purple-600 focus:border-purple-600 text-sm font-medium transition duration-150 ease-in-out"
+            >Faq</a
+          >
+          <a
+            href="contact.html"
+            class="text-gray-400 hover:text-primary focus:text-primary inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-purple-600 focus:border-purple-600 text-sm font-medium transition duration-150 ease-in-out"
+            >Contact</a
+          >
+          <a
+            href="#"
+            class="text-gray-400 hover:text-primary focus:text-primary inline-flex items-center px-1 pt-1 border-b-2 border-transparent hover:border-purple-600 focus:border-purple-600 text-sm font-medium transition duration-150 ease-in-out"
+            >PL</a
+          >
+        </div>
+        <div class="md:hidden">
+          <button
+            id="mobile-menu-button"
+            class="text-gray-700 focus:outline-none"
+          >
+            <svg
+              class="h-8 w-8"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path d="M4 6h16M4 12h16m-7 6h7"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <div id="mobile-menu" class="md:hidden hidden bg-gray-950 text-white">
+        <a
+          href="index.html"
+          class="bg-purple-50 border-purple-500 text-purple-700 block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
+          >Home</a
+        >
+        <a
+          href="about.html"
+          class="border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800 block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
+          >About</a
+        >
+        <a
+          href="service.html"
+          class="border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800 block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
+          >Services</a
+        >
+        <a
+          href="Blog.html"
+          class="border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800 block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
+          >Blog</a
+        >
+        <a
+          href="faq.html"
+          class="border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800 block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
+          >FAQ</a
+        >
+        <a
+          href="contact.html"
+          class="border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800 block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
+          >Contact</a
+        >
+        <a
+          href="#"
+          class="border-transparent text-gray-600 hover:bg-gray-50 hover:border-gray-300 hover:text-gray-800 block pl-3 pr-4 py-2 border-l-4 text-base font-medium"
+          >PL</a
+        >
+      </div>
+    </nav>
+    <!-- navbar  -->
+
+    <!-- landing page -->
+    <div
+      style="
+        background-image: url(image/bg1.jpg);
+        width: 100%;
+        height: 100vh;
+        background-position: center;
+        background-size: cover;
+        object-fit: cover;
+      "
+      class="flex justify-start items-center"
+    >
+      <div class="text-white font-Montserrat ml-4 md:ml-20 mt-8">
+        <div>
+          <p class="text-3xl font-bold">ANNA NAGORSKA</p>
+        </div>
+        <div>
+          <p class="text-2xl font-normal mt-6">
+            Psychologist and Therapeutic Counsellor
+          </p>
+        </div>
+        <div>
+          <p class="text-2xl font-normal mt-6">
+            Online and telephone counselling services available.
+          </p>
+        </div>
+        <div>
+          <button class="bg-primary text-white rounded-md py-3 px-8 mt-6">
+            <a href="service.html">Explore services</a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- landing page -->
+
+    <!-- Psychology Section -->
+    <section class="bg-white py-16 px-4 sm:px-4 lg:px-20 font-Montserrat">
+      <div class="max-w-7xl mx-auto">
+        <div class="text-center">
+          <h2
+            class="text-primary tracking-wide uppercase text-3xl leading-8 font-extrabold"
+          >
+            Welcome to Our Practice
+          </h2>
+          <p
+            class="mt-2 text-base font-semibold tracking-tight text-gray-900 sm:text-xl"
+          >
+            Your Mental Health Matters
+          </p>
+          <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+            We provide professional psychological services to help you lead a
+            healthier and happier life.
+          </p>
+        </div>
+        <div class="mt-10">
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Service 1 -->
+            <div
+              class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300"
+            >
+              <div
+                class="flex items-center justify-center h-12 w-12 rounded-md bg-primary text-white mb-4"
+              >
+                <svg
+                  class="h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 11H5m14 4H5m4-8H5m14 4h-6"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-lg leading-6 font-medium text-gray-900">
+                Individual Therapy
+              </h3>
+              <p class="mt-2 text-base text-gray-500">
+                Personalized sessions to address your unique mental health
+                needs.
+              </p>
+            </div>
+            <!-- Service 2 -->
+            <div
+              class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300"
+            >
+              <div
+                class="flex items-center justify-center h-12 w-12 rounded-md bg-primary text-white mb-4"
+              >
+                <svg
+                  class="h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 8v4l3 3m-3-3l-3 3m12 4h.01"
+                  />
+                </svg>
+              </div>
+              <h3 class="text-lg leading-6 font-medium text-gray-900">
+                Couples Therapy
+              </h3>
+              <p class="mt-2 text-base text-gray-500">
+                Helping couples improve their relationships through effective
+                communication and conflict resolution.
+              </p>
+            </div>
+            <!-- Service 3 -->
+            <div
+              class="p-6 bg-white rounded-lg shadow-md hover:shadow-lg transition duration-300"
+            >
+              <div
+                class="flex items-center justify-center rounded-md bg-primary h-12 w-12 text-white mb-4"
+              >
+                <svg
+                  class="h-6 w-6"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M12 8c-1.1 0-2 .9-2 2h4c0-1.1-.9-2-2-2zM12 8V4m0 0c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm0 0c-1.1 0-2-.9-2-2h4c0 1.1-.9 2-2 2zm0 16c-1.1 0-2 .9-2 2h4c0-1.1-.9-2-2-2zM12 20v-4m0 0c1.1 0 2 .9 2 2h-4c0-1.1.9-2 2-2zm0 0c-1.1 0-2-.9-2-2h4c0 1.1-.9 2-2 2zM4 12c0 1.1.9 2 2 2V10c-1.1 0-2 .9-2 2zm16-2c0 1.1-.9 2-2 2V10c1.1 0 2 .9 2 2zm-10 2v4m4-4v4"
+                  />
+                </svg>
+                <!-- <img src="image/couples image.webp" alt="" class="w-"> -->
+              </div>
+              <h3 class="text-lg leading-6 font-medium text-gray-900">
+                Family Therapy
+              </h3>
+              <p class="mt-2 text-base text-gray-500">
+                Working with families to create healthy dynamics and resolve
+                conflicts.
+              </p>
+            </div>
+          </div>
+          <div class="mt-12 text-center">
+            <a
+              href="contact.html"
+              class="px-6 py-3 border border-transparent text-base font-medium rounded-md text-white bg-primary hover:bg-indigo-900 focus:border-none focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition duration-150 ease-in-out"
+              >Book an Appointment</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white shadow-lg py-10 font-Montserrat">
+      <div>
+        <div>
+          <p class="text-3xl font-bold text-center">Anna Nagorska</p>
+        </div>
+        <div>
+          <p class="text-xl font-normal text-center my-4">
+            Psychologist and Counsellor
+          </p>
+        </div>
+      </div>
+      <div class="px-0 lg:px-24 mt-6 grid grid-cols-12">
+        <div class="lg:col-span-6 col-span-12 p-10">
+          <div>
+            <p>
+              We all go through difficult times in our lives and it can impact
+              our daily activities. I know that during those times, it takes a
+              lot of courage to reach out for help. I believe it is important to
+              find someone who will offer a non-judgmental and supportive space
+              to talk through your difficulties with you.
+            </p>
+          </div>
+          <div class="mt-8">
+            <p class="leading-relaxed">
+              Integra therapeutic counselling is a place where you can access
+              professional psychological support to help you improve your
+              emotional wellbeing and quality of your life.
+            </p>
+          </div>
+          <div class="mt-10">
+            <button class="py-3 px-8 bg-primary text-white rounded-md">
+              <a href="about.html">Learn More</a>
+            </button>
+          </div>
+        </div>
+        <div class="lg:col-span-6 col-span-12 p-10">
+          <img src="image/shake.jpeg" alt="" class="object-cover" />
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-16 px-6 md:px-24 py-10 font-Montserrat">
+      <div>
+        <p class="text-3xl font-bold text-center py-3">
+          Schedule Your Appointment
+        </p>
+      </div>
+      <div>
+        <p class="text-xl font-normal text-center pb-8">
+          Please contact me if you want to schedule your appointment or if you
+          require <br />
+          any further information
+        </p>
+      </div>
+      <div
+        class="container mx-auto p-8 gap-6 bg-white rounded-lg shadow-lg flex flex-col md:flex-row"
+      >
+        <!-- Appointment Form -->
+        <div class="w-full md:w-1/2 pr-0 md:pr-8">
+          <h1 class="text-2xl font-bold mb-6 text-center md:text-left">
+            Book an Appointment
+          </h1>
+          <form id="appointment-form" class="space-y-4">
+            <div class="form-group">
+              <label for="name" class="block text-gray-700">Full Name</label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email" class="block text-gray-700">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+                required
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="message" class="block text-gray-700">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                class="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
+                rows="4"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="w-full bg-primary text-white py-2 px-4 rounded-lg hover:bg-primary focus:outline-none focus:ring-2 focus:ring-blue-600"
+            >
+              Book Appointment
+            </button>
+          </form>
+        </div>
+
+        <!-- Map -->
+        <div class="w-full md:w-1/2 mt-8 md:mt-0">
+          <h1 class="text-2xl font-bold mb-6 text-center md:text-left">
+            Our Location
+          </h1>
+          <div class="w-full h-96 bg-gray-200 rounded-lg shadow-inner">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.1253684742727!2d144.96315781581993!3d-37.814217979751824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf0727cf55b9b6b78!2sFederation%20Square!5e0!3m2!1sen!2sau!4v1597740887291!5m2!1sen!2sau"
+              width="100%"
+              height="100%"
+              frameborder="0"
+              style="border: 0"
+              allowfullscreen=""
+              aria-hidden="false"
+              tabindex="0"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="bg-[#0E1125] p-10 text-white grid grid-cols-12 justify-start md:justify-between items-start md:items-center font-Montserrat gap-4"
+    >
+      <div class="md:col-span-4 col-span-12">
+        <img src="image/logo.png" alt="" class="h-28" />
+      </div>
+      <div
+        class="md:col-span-4 col-span-12 flex flex-row justify-start md:justify-center gap-14"
+      >
+        <ul class="flex flex-col justify-center gap-2">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="service.html">Service</a></li>
+          <li><a href="Blog.html">Blog</a></li>
+        </ul>
+        <ul class="flex flex-col gap-2">
+          <li><a href="faq.html">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="PL.html">PL</a></li>
+        </ul>
+      </div>
+      <div class="md:col-span-4 col-span-12 md:mt-0 mt-4">
+        <div>
+          <p>&copy; Copyright 2024 INTEGRA Counselling.</p>
+          <p>
+            We use cookies on this website. <a href="Policy.html">Learn more</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
